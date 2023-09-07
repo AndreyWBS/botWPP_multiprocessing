@@ -116,12 +116,13 @@ def comecar(ondeMandarNumeros, TextoMandar, nomeWPP, caminhoPlanilha, driver):
                                     texto = str(TextoMandar)
                                     escrever("._3Uu1_  .g0rxnol2  .iq0m558w", "boa tarde", driver)
                                     escrever("._3Uu1_  .g0rxnol2  .iq0m558w", texto, driver)
+                                    #salvar numero na planilha
                                     planilha_de_numeros_env["numero"].append(str(numeroTELL))
                                     planilha_de_numeros_env["codigo"].append(str(codigo))
                                     gerarPLanilahas(nomeWPP)
                                     break
                             except:
-
+                                # salvar numero na planilha
                                 planilha_de_numeros_Erro["numero"].append(str(numeroTELL))
                                 planilha_de_numeros_Erro["codigo"].append(str(codigo))
                                 gerarPLanilahas(nomeWPP)

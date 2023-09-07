@@ -18,7 +18,7 @@ def main():
             nomeWPP = str(wpps.loc[i, 'cobrador'])
             caminhoPlanilha = str(wpps.loc[i, 'caminhoPLan'])
 
-            drive = verificarNav(i, wpps)
+            drive = "" #TODO: colocar o driver aqui  quando aprender a guardar ele
 
             p = multiprocessing.Process(target=comecar,
                                         args=(ondeMandarNumeros, TextoMandar, nomeWPP, caminhoPlanilha, drive))
